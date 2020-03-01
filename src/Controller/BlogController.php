@@ -15,55 +15,43 @@ use Symfony\Component\Serializer\Serializer;
  */
 class BlogController extends AbstractController
 {
-    private const POSTS = [
-        ['id' => 1,
-            'slug'=>'hello-world',
-            'title'=> 'Hello World!'],
-        ['id' => 2,
-            'slug'=>'hello-world2',
-            'title'=> 'Hello World!2'],
-        ['id' => 3,
-        'slug'=>'hello-world3',
-        'title'=> 'Hello World!3']
-    ];
-
-
     /**
      * @Route("/{page}", name="blog_list",  defaults={"page": 5}, requirements={"page" ="\d+"})
      */
     public function list($page, Request $request)
     {
         $limit = $request->get('limit', 10);
-   //     $repository = $this->getDoctrine()->getRepository(BlogPost::class);
-   //     $items = $repository->findAll();
+       $repository = $this->getDoctrine()->getRepository(BlogPost::class);
+       $items = $repository->findAll();
   //  return new Response( $limit);
         return $this->json([
             'page' => $page,
             'limit' => $limit,
-            'data' => array_map(function ($item){
-                return $this->generateUrl('blog_by_slug', ['slug' =>$item['slug']]);
-            },self::POSTS)
+            'data' => array_map(function (BlogPost $item){
+                return $this->generateUrl('blog_by_slug', ['slug' => $item->getSlug()]);
+            },$items)
         ]
         );
     }
     /**
-     * @Route("/{id}", name="blog_by_id", requirements={"id" ="\d+"})
+     * @Route("/post/{id}", name="blog_by_id", requirements={"id" ="\d+"})
      */
     public function post($id)
     {
-        return $this->json(self::POSTS[array_search($id, array_column(self::POSTS, 'id'))]);
-       // return $this->json($this->getDoctrine()->getRepository(BlogPost::class)->find($id));
+       // return $this->json(self::POSTS[array_search($id, array_column(self::POSTS, 'id'))]);
+       return $this->json($this->getDoctrine()->getRepository(BlogPost::class)->find($id));
     }
     /**
-     * @Route("/{slug}", name="blog_by_slug", requirements={"slug" = "^[a-z0-9-]+$"})
+     * @Route("/post/{slug}", name="blog_by_slug")
      */
     public function postBySlug($slug)
-    {return $this->json(self::POSTS[array_search($slug, array_column(self::POSTS, 'slug'))]);
-        //return $this->json($this->getDoctrine()->getRepository(BlogPost::class)->findBy(['slug' =>$slug]));
+    {
+        //return $this->json(self::POSTS[array_search($slug, array_column(self::POSTS, 'slug'))]);
+        return $this->json($this->getDoctrine()->getRepository(BlogPost::class)->findOneBy(['slug' =>$slug]));
     }
 
     /**
-     * @Route("/add=", name="blog_add", methods={"POST"} )
+     * @Route("/add", name="blog_add", methods={"POST"} )
      */
     public function add(Request $request){
         /** @var Serializer $serializer */
