@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\BlogPost;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -35,19 +36,23 @@ class BlogController extends AbstractController
     }
     /**
      * @Route("/post/{id}", name="blog_by_id", requirements={"id" ="\d+"})
+     * @ParamConverter("post", class="App:BlogPost")
      */
-    public function post($id)
+    public function post($post)
     {
+        // its the same as dologing find($id)
        // return $this->json(self::POSTS[array_search($id, array_column(self::POSTS, 'id'))]);
-       return $this->json($this->getDoctrine()->getRepository(BlogPost::class)->find($id));
+       return $this->json($post);
     }
     /**
      * @Route("/post/{slug}", name="blog_by_slug")
+     * @ParamConverter("post", class="App:BlogPost", options={"mapping" : {"slug": "slug"}})
      */
-    public function postBySlug($slug)
+    public function postBySlug($post)
     {
         //return $this->json(self::POSTS[array_search($slug, array_column(self::POSTS, 'slug'))]);
-        return $this->json($this->getDoctrine()->getRepository(BlogPost::class)->findOneBy(['slug' =>$slug]));
+ //       return $this->json($this->getDoctrine()->getRepository(BlogPost::class)->findOneBy(['slug' =>$slug]));
+        return $this->json($post);
     }
 
     /**
