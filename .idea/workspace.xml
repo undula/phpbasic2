@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ce76985-2897-448c-9661-3e4f1f4f3846" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RESTJura.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RESTJura.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +139,16 @@
       <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/api-platform/api-pack" />
+      <path value="$PROJECT_DIR$/vendor/api-platform/core" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YTXVkr1HlUPQItLHHNcfCtdemT" />
@@ -165,7 +183,9 @@
       <updated>1582967583120</updated>
       <workItem from="1582967585209" duration="7988000" />
       <workItem from="1583001772529" duration="6543000" />
-      <workItem from="1583048790362" duration="4916000" />
+      <workItem from="1583048790362" duration="5699000" />
+      <workItem from="1583348913779" duration="6670000" />
+      <workItem from="1583412727971" duration="1557000" />
     </task>
     <servers />
   </component>
@@ -173,10 +193,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="45" y="207" width="441" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1583003378938">
+    <state x="45" y="207" width="441" height="560" key="#com.intellij.ide.util.MemberChooser" timestamp="1583413730207">
       <screen x="35" y="24" width="1331" height="744" />
     </state>
-    <state x="45" y="207" width="441" height="560" key="#com.intellij.ide.util.MemberChooser/35.24.1331.744@35.24.1331.744" timestamp="1583003378938" />
+    <state x="45" y="207" width="441" height="560" key="#com.intellij.ide.util.MemberChooser/35.24.1331.744@35.24.1331.744" timestamp="1583413730207" />
     <state width="1257" height="145" key="GridCell.Tab.0.bottom" timestamp="1582979697475">
       <screen x="35" y="24" width="1331" height="744" />
     </state>
@@ -229,5 +249,9 @@
       <screen x="35" y="24" width="1331" height="744" />
     </state>
     <state x="354" y="40" key="SettingsEditor/35.24.1331.744@35.24.1331.744" timestamp="1582967754381" />
+    <state x="397" y="190" width="709" height="578" key="find.popup" timestamp="1583350805914">
+      <screen x="35" y="24" width="1331" height="744" />
+    </state>
+    <state x="397" y="190" width="709" height="578" key="find.popup/35.24.1331.744@35.24.1331.744" timestamp="1583350805914" />
   </component>
 </project>
