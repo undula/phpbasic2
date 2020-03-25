@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ce76985-2897-448c-9661-3e4f1f4f3846" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/PasswordHashSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/BlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +145,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1YTXVkr1HlUPQItLHHNcfCtdemT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -180,7 +181,9 @@
       <workItem from="1583048790362" duration="5699000" />
       <workItem from="1583348913779" duration="6670000" />
       <workItem from="1583412727971" duration="3994000" />
-      <workItem from="1583431402756" duration="1503000" />
+      <workItem from="1583431402756" duration="3835000" />
+      <workItem from="1584260290357" duration="303000" />
+      <workItem from="1585157577449" duration="456000" />
     </task>
     <servers />
   </component>
@@ -240,6 +243,10 @@
       <screen x="35" y="24" width="1331" height="744" />
     </state>
     <state width="1257" height="145" key="GridCell.Tab.2.right/35.24.1331.744@35.24.1331.744" timestamp="1582979697480" />
+    <state x="298" y="394" width="777" height="371" key="NewPhpClassDialog" timestamp="1583442301128">
+      <screen x="35" y="24" width="1331" height="744" />
+    </state>
+    <state x="298" y="394" width="777" height="371" key="NewPhpClassDialog/35.24.1331.744@35.24.1331.744" timestamp="1583442301128" />
     <state x="354" y="40" key="SettingsEditor" timestamp="1582967754381">
       <screen x="35" y="24" width="1331" height="744" />
     </state>
